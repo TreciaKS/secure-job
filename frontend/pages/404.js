@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 const NotFound = () => {
     return ( 
@@ -12,9 +13,11 @@ const NotFound = () => {
                     <span className="sr-only text-white">Kutty Home Page</span>
                     </a>
                     <p className="mt-5 mb-3 text-xl font-bold text-white md:text-2xl">Page not found (404)</p>
-                    <p className="mb-3 text-base font-medium text-gray-200">
-                    The page you're looking for may have moved or no longer exists. Head back to our <a href="/" className="underline text-indigo-500">homepage</a>, or take a look at one of the sections below.
-                    </p>
+                    <Link href='/'>
+                    <span className="mb-3 text-base font-medium text-gray-200">
+                    The page you're looking for may have moved or no longer exists. Head back to our <span className="underline text-indigo-500 cursor-pointer">homepage</span>, or take a look at one of the sections below.
+                    </span>
+                    </Link>
                 </div>
             </section>
         </>
