@@ -34,7 +34,7 @@ const DetailedJobs = ({job}) => {
     return ( 
         <>
             <h2 className="mb-2 text-xl font-bold leading-snug text-gray-900">
-                Hello 
+                Hello {job.attributes.email}
             </h2>
         </>
      )
