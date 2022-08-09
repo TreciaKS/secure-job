@@ -28,13 +28,13 @@ export default function Home() {
         </div>
         <div className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
           <div className="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
-            <q className="inline-block py-px mb-4 text-xs font-semibold tracking-wider text-indigo-500 capitalize rounded-full bg-teal-accent-400">
+            <q className="inline-block py-px mb-4 text-md font-semibold tracking-wider text-indigo-500 capitalize rounded-full bg-teal-accent-400">
              Secure Job is the most effective way to find the right people, fast
             </q>
             <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-             You deserve a job
+             You deserve a job &nbsp; 
               <br className="hidden md:block" />
-              that loves you{' '}
+               that loves you{' '}
               <span className="inline-block text-deep-purple-accent-400">
               back
               </span>
