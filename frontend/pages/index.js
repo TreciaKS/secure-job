@@ -5,8 +5,6 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Secure Job</title>
-        <meta name="description" content="Job vacancies at your disposal" />
         <link rel="icon" href="/logo.png" />
       </Head>
 
