@@ -2,16 +2,16 @@ export const getStaticPaths = async () => {
     const res = await fetch("http://localhost:1337/api/jobs?populate=*")
     const data = await res.json()
 
-    const paths = Object.keys(data).map(item => {
-        // throws an error!! can't read toString() and A required parameter (id) was not provided as a string
+    // convert to string because it returns value as interger
+    const paths = data.data.map(item => {
         return {
             params: { id: item.id.toString() }
         }
     })
-
+    
     return {
         paths: paths,
-        fallback: true
+        fallback: false
     }
 }
 
@@ -20,20 +20,22 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (context) => {
     const id = context.params.id
 
-    const res = await fetch("http://localhost:1337/api/jobs?populate=*" + id)
+    const res = await fetch("http://localhost:1337/api/jobs?populate=*/" + id)
     const data = await res.json()
 
     return {
         props: {
-            jobItem: data
+            job: data
         }
     }
 }
 
-const DetailedJobs = ({jobItem}) => {
+const DetailedJobs = ({job}) => {
     return ( 
         <>
-            <h1>Hello {jobItem.attributes.vacancy}</h1>
+            <h2 className="mb-2 text-xl font-bold leading-snug text-gray-900">
+                Hello 
+            </h2>
         </>
      )
 }
