@@ -15,6 +15,7 @@ export const getStaticPaths = async () => {
     }
 }
 
+// we run the 'async (context)' function 10 times because we have 10 items in the 'paths' property that holds an array of objects from the URL? API request
 // The id of each item that we are going to get is attached to this context object
 export const getStaticProps = async (context) => {
     const id = context.params.id
