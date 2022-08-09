@@ -10,7 +10,7 @@ export default function Home() {
         <link rel="icon" href="/logo.png" />
       </Head>
 
-      <div className="relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0 h-screen">
+      <div className="relative flex flex-col-reverse py-8 lg:pt-12 lg:flex-col lg:pb-0 h-screen">
         <div className="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
           <svg
             className="absolute left-0 hidden h-full text-white transform -translate-x-1/2 lg:block"
@@ -21,7 +21,7 @@ export default function Home() {
             <path d="M50 0H100L50 100H0L50 0Z" />
           </svg>
           <img
-            className="w-full rounded shadow-lg h-object-cover lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
+            className="w-screen rounded shadow-lg h-object-cover lg:rounded-none lg:shadow-none md:h-96 lg:h-screen"
             src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8b2ZmaWNlfGVufDB8fDB8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
             alt=""
           />
