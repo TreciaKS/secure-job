@@ -10,7 +10,7 @@ const Navbar = () => {
                     <nav className="flex flex-wrap items-center justify-center text-base md:ml-auto">
                         <Link href='/'><a className="mr-5 underline hover:text-gray-900 underline-offset-2 decoration-2 decoration-indigo-500">Home</a></Link>
                         <Link href='/jobs'><a className="mr-5 hover:text-gray-900">Jobs</a></Link>
-                        <a target={'_blank'} href='https://github.com/TreciaKS/job-board' className="mr-5 hover:text-gray-900">Github</a>
+                        <a target={'_blank'} href='https://github.com/TreciaKS/secure-job' className="mr-5 hover:text-gray-900">Github</a>
                     </nav>
             </div>
         </header>
