@@ -112,5 +112,5 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 # Live Demo of this project
 <ul>
-  <li><a href="https://secure-job.vercel.app" target='_blank'>Secure Job</a></li>
+  <li><a href="https://secure-job.vercel.app" target='blank'>Secure Job</a></li>
 </ul>
