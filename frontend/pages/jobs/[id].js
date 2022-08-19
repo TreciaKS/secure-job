@@ -81,7 +81,7 @@ const DetailedJobs = ({job}) => {
                 <div className="avatar">
                     <img 
                     className="flex-shrink-0 object-cover object-center w-24 h-24 rounded-full"
-                    src={`http://localhost:1337${job.attributes.image.data.attributes.url}`}
+                    src={`https://sleepy-cliffs-76413.herokuapp.com${job.attributes.image.data.attributes.url}`}
                     alt={"Photo of " + job.attributes.recruiter} />
                 </div>
                 <div className="ml-4">
