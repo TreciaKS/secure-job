@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 // to fetch data
 export const getServerSideProps = async () => {
-     const res = await fetch("http://localhost:1337/api/jobs?populate=*")
+     const res = await fetch("https://sleepy-cliffs-76413.herokuapp.com/api/jobs?populate=*")
      const data = await res.json()
      
      return {

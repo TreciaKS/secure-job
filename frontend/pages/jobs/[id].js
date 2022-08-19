@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 export const getStaticPaths = async () => {
-    const res = await fetch("http://localhost:1337/api/jobs?populate=*")
+    const res = await fetch("https://sleepy-cliffs-76413.herokuapp.com/api/jobs?populate=*")
 
     const { data: jobs } = await res.json()
 
@@ -40,7 +40,7 @@ export const getStaticProps = async ({params}) => {
 
     const {id} = params
 
-    const res = await fetch(`http://localhost:1337/api/jobs/${id}?populate=*`)
+    const res = await fetch(`https://sleepy-cliffs-76413.herokuapp.com/api/jobs/${id}?populate=*`)
     // const item = await res.json()
     const {data: job } = await res.json() //destructure and rename
 
