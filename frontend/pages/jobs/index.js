@@ -31,14 +31,6 @@ const JobPage = ({getJobs}) => {
                                         {job.attributes.description.substring(0, MAX_LENGTH) + " ..."}
                                         </p>
                                         <a className="flex items-center text-gray-700" href="#">
-                                        <div className="avatar">
-                                             <img
-                                             className="flex-shrink-0 object-cover object-center w-12 h-12 rounded-full"
-                                             src={`https://sleepy-cliffs-76413.herokuapp.com${job.attributes.image.data.attributes.url}`}
-                                             
-                                             alt={"Photo of " + job.attributes.recruiter} 
-                                             />
-                                        </div>
                                         <div className="ml-2">
                                              <p className="text-sm font-semibold text-gray-900">{job.attributes.recruiter}</p>
                                              <p className="text-sm text-gray-600">{job.attributes.email}</p>
